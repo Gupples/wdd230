@@ -6,7 +6,7 @@
 }
 
 header{
-    background-color: darkslategray;
+    background-color: darkolivegreen;
     color: white;
     display: flex;
     justify-items: center;
@@ -35,6 +35,7 @@ h1 {
 
 nav {
     background-color: chocolate;
+    font-weight: bold;
 }
 
 nav ul {
@@ -75,7 +76,7 @@ nav .active {
 }
 
 .card h2 {
-    background-color: brown;
+    background-color:darkolivegreen;
     color: tan;
     text-align: center;
     padding: .2em;
