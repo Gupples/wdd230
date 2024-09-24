@@ -1,9 +1,14 @@
+// Replace the current year.
 const options = {
     year: "numeric"
 }
 
-const modified = document.lastModified;
+const footer = document.querySelector('p');
+let footerText = footer.textContent;
 const currentDate = new Date().toLocaleDateString("en-US", options);
+let newFooter = footerText.replace('CurrentYear', currentDate)
+footer.textContent = newFooter;
 
-document.firstElementChild("p").textContent = `&copy${currentDate}`;
-document.querySelector("#lastModified").textContent = "Hello";
+// Insert last modification information
+const modified = document.lastModified;
+document.querySelector('#lastModified').textContent = `Last Modification: ${modified}`;
