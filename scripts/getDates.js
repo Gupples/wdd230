@@ -1,7 +1,7 @@
 // Replace the current year.
 const options = {
     year: "numeric"
-};
+}
 
 const footer = document.querySelector('p');
 let footerText = footer.textContent;
