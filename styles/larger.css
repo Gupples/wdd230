@@ -4,9 +4,13 @@
         font-weight: bold;
     }
 
+    
     nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
     }
 
     main {
