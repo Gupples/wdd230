@@ -93,3 +93,18 @@ nav .active {
     text-align: center;
     width: 100%;
 }
+
+footer {
+    display: block;
+    text-align: center;
+}
+
+p {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 05px;
+}
+
+#lastModified{
+    color:tan;
+}
