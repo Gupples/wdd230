@@ -1,0 +1,24 @@
+@media only screen and (min-width: 38rem) {
+    header span{
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-weight: bold;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5px;
+    }
+    .card section {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 1;
+        margin: auto;
+    }
+}
