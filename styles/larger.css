@@ -13,10 +13,18 @@
         flex: 1 1 100%;
     }
 
+    nav .active {
+        padding-top: 0;
+    }
+
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 5px;
+    }
+    
+    #spacer, #spacer.open {
+        margin-top: -2rem;
     }
 
     .card {
@@ -29,4 +37,13 @@
         grid-column: span 1;
         margin: auto;
     }
+
+    #menuButton{
+        display: none;
+    }
+
+    #navLinks, #navLinks.open {
+        display: flex;
+    }
+
 }

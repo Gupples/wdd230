@@ -25,6 +25,7 @@ header span {
     justify-content: center;
     font-size: 2rem;
     font-weight: bold;
+    margin-left: -2rem;
 }
 
 h1 {
@@ -32,15 +33,51 @@ h1 {
     text-align: center;
 }
 
+#menuButton {
+    position: absolute;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    top: 0.2rem;
+    right: 0.2rem;
+    cursor: pointer;
+}
+
+#menuButton.open {
+    /* margin-top: 10px; */
+}
+
+#menuButton::before {
+    content: "☰";
+    color: black;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+#menuButton.open::before {
+    content: "❌";
+    margin-right: 0.2rem;
+}
+
 nav {
     background-color: chocolate;
     font-weight: bold;
+    position: relative;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0px;
     width: 100%;
+}
+/* 
+#navigation {
+    min-height: 2rem;
+} */
+
+#navigation.open{
+
 }
 
 nav a {
@@ -57,10 +94,32 @@ nav a:hover {
 
 nav .active {
     background-color: rgba(0, 0, 0, 0.2);
+   padding-top: 2rem;
 }
 
 nav .active a{
     color: white;
+}
+
+#navLinks {
+    display: none;
+    list-style-type: none;
+}
+
+#navLinks.open {
+    display: block;
+}
+
+#spacer {
+    display: flex;
+    background-color: rgb(210, 105, 30);
+    height: 2rem;
+    width: 100%;
+    margin-top: -2rem;
+}
+
+#spacer.open {
+    margin-top: 0rem;
 }
 
 .card {
