@@ -28,10 +28,38 @@ header span {
     margin-left: -2rem;
 }
 
+#darkMode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#darkMode::before {
+    content: '🌙';
+}
+
+#darkMode.dark::before {
+    content: '☀️';
+}
+
 h1 {
     grid-column: span 2;
     text-align: center;
 }
+
+main.dark {
+    background-color: black;
+    color: white;
+}
+
+main.dark a {
+    color: lightblue;
+}
+
+main.dark a:visited {
+    color: lightpink;
+}
+
 
 #menuButton {
     position: absolute;
@@ -42,10 +70,6 @@ h1 {
     top: 0.2rem;
     right: 0.2rem;
     cursor: pointer;
-}
-
-#menuButton.open {
-    /* margin-top: 10px; */
 }
 
 #menuButton::before {
@@ -70,14 +94,6 @@ nav ul {
     list-style-type: none;
     margin: 0px;
     width: 100%;
-}
-/* 
-#navigation {
-    min-height: 2rem;
-} */
-
-#navigation.open{
-
 }
 
 nav a {
@@ -159,6 +175,7 @@ nav .active a{
 footer {
     display: block;
     text-align: center;
+
 }
 
 p {

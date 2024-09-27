@@ -12,5 +12,13 @@ hamButton.addEventListener('click', () => {
         } else {
             spacer.classList.add('open')
         };
-
-})
+        
+        
+    });
+    
+const main = document.querySelector('main');
+const darkButton = document.querySelector('#darkMode')
+darkButton.addEventListener('click', () => {
+    main.classList.toggle('dark');
+    darkButton.classList.toggle('dark');
+});
