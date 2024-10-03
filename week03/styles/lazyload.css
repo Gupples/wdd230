@@ -1,0 +1,18 @@
+.lazy {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
