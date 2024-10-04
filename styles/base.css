@@ -28,6 +28,21 @@ header span {
     margin-left: -2rem;
 }
 
+#hero {
+    position: relative;
+}
+
+#hero-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#hero-label{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
 #darkMode {
     position: absolute;
     top: 1rem;
@@ -170,6 +185,11 @@ nav .active a{
     padding: .5em;
     text-align: center;
     width: 100%;
+}
+
+#location {
+    width: 100%;
+    padding: .5rem;
 }
 
 footer {

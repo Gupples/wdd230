@@ -29,6 +29,16 @@
 
     #hero {
         grid-column: span 2;
+        margin: 0;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #hero-img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
 
     .card {
@@ -40,6 +50,11 @@
         flex-direction: column;
         grid-column: span 1;
         margin: auto;
+    }
+
+    #location {
+        grid-column: span 2;
+        width: 100vw;
     }
 
     #menuButton{
