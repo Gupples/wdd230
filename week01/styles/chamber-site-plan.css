@@ -1,0 +1,92 @@
+:root {
+    --my-primary: #006400;
+    --my-secondary: #9ced8b;
+    --my-tertiary: #004000;
+    --my-accent1: #000000;
+    --my-accent2: #ffffff;
+}
+
+body {
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--my-secondary);
+    color: var(--my-accent1);
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+}
+
+#scenarios ul {
+    display: block;
+    text-align: left;
+    margin: auto;
+    width: 50vw;
+}
+#scenarios li{
+    list-style: none;
+}
+
+table, th, td {
+    border: 3px solid brown;
+    border-collapse: collapse;
+}
+
+#colorTable {
+    width: 100%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+
+}
+
+#colorTable th {
+    background-color: #efe8aa;
+    color: #005800;
+    font-size: large;
+    width: 20%;
+    height: 1.5em;
+}
+
+#colorTable td {
+    width: 20%;
+    height: 3rem;
+    text-align: center;
+    font-weight: 150;
+}
+
+#primary {
+    background-color: var(--my-primary);
+    color: var(--my-accent2);
+}
+
+#secondary {
+    background-color: var(--my-secondary);
+    color: var(--my-accent1);
+}
+
+#tertiary {
+    background-color: var(--my-tertiary);
+    color: var(--my-accent2);
+}
+
+#accent1 {
+    background-color: var(--my-accent1);
+    color: var(--my-secondary);
+}
+
+#accent2 {
+    background-color: var(--my-accent2);
+    color: var(--my-tertiary)
+}
+
+
+#typography h3 {
+    font-family: "Oswald", sans-serif;
+}
+
+#typography p {
+    
+}
