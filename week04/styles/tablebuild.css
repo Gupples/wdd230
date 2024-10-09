@@ -1,0 +1,67 @@
+:root {
+    --darkest-background: #004000;
+    --darker-background: #2f5700;
+    --lighter-background: #DEF8D6;
+    --lightest-background: white;
+    --dark-theme-text: #ffff00;
+    --bord: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Roboto";
+}
+
+table {
+    border-collapse: collapse;
+    border: var(--bord);
+}
+
+caption {
+    caption-side: bottom;
+}
+
+thead {
+    background-color: var(--darker-background);
+    color: var(--dark-theme-text);
+}
+
+th {
+    padding: .5rem;
+}
+
+thead > tr:first-child {
+    background-color: var(--darkest-background);
+}
+
+thead tr:nth-child(2) th {
+    border: var(--bord);
+}
+
+thead tr:nth-child(2) th:first-child {
+    background-color: var(--darkest-background);
+    border: none;
+}
+
+tbody {
+    text-align: center;
+}
+
+tbody th, tbody td {
+    border-right: var(--bord);
+}
+
+tbody td:last-child{
+    border-right: none;
+}
+
+tbody tr {
+    border-bottom: var(--bord);
+}
+
+tbody tr:last-child{
+    border-bottom: none;
+}
+
+tbody tr:nth-child(2) {
+    background-color: var(--lighter-background);
+}
