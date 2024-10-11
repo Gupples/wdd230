@@ -208,69 +208,6 @@ nav .active a{
     padding: .5rem;
 }
 
-
-input {
-    display: block;
-    border: 1px solid darkolivegreen;
-    border-radius: 6px;
-    padding: .5rem;
-    margin-bottom: 2rem;
-    width: 100%;
-    max-width: 300px;
-}
-
-fieldset {
-    margin: 2rem 1rem;
-    padding: 10px;
-    border-radius: 6px;
-}
-
-#personalInfo > label {
-    color: #d80000;
-}
-
-
-form input:required {
-    border-right: 8px solid red;
-}
-
-
-input:required:valid {
-    border-right: solid 8px #76ac08;
-}
-
-#rangevalue {
-    font-size: 1.5rem;
-    margin-top: .5rem;
-}
-
-main.dark form input[type="range"] {
-    color: white;
-}
-
-input[type="submit"] {
-    margin-left: 1.5rem;
-    width: 80%;
-    max-width: 300px;
-    background-image: linear-gradient(rgb(110, 146, 47), var(--banner-color));
-    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
-    transition: box-shadow 0.3s ease-in-out, background-image 0.7s ease-in-out;
-}
-
-input[type="submit"]:hover {
-    box-shadow: 7px 7px rgba(128, 128, 128, 0.5);
-    background-image: radial-gradient(rgb(110, 146, 47), var(--banner-color));
-}
-
-#thankYou {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    justify-items: center;
-    padding-top: 20vw;
-    height: 70vh;
-}
-
 footer {
     display: block;
     text-align: center;
