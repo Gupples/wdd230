@@ -13,7 +13,7 @@
         flex: 1 1 100%;
     }
 
-    nav .active {
+    nav li:first-child {
         padding-top: 0;
     }
 
@@ -52,6 +52,8 @@
         margin: auto;
     }
 
+
+
     #location {
         grid-column: span 2;
         width: 100vw;
@@ -65,4 +67,22 @@
         display: flex;
     }
 
+    form {
+        grid-column: span 2;
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    input, label, #rangevalue {
+        margin-left: 2rem;
+    }
+
+    input[type="submit"] {
+        margin-left: 3.5rem;
+    }
+
+    #thankYou {
+        grid-column: span 2;
+    }
 }

@@ -1,3 +1,8 @@
+:root {
+    --banner-color: rgb(85, 107, 47);
+    --nav-color: rgb(210, 105, 30);
+}
+
 * {
     padding: 0%;
     margin: 0%;
@@ -6,7 +11,7 @@
 }
 
 header{
-    background-color: darkolivegreen;
+    background-color: var(--banner-color);
     color: white;
     display: flex;
     justify-items: center;
@@ -75,6 +80,14 @@ main.dark a:visited {
     color: lightpink;
 }
 
+main.dark input[type="range"] {
+    color: white;
+}
+
+#feedback {
+    margin: -1rem 2rem 1rem 2rem;
+    padding-bottom: .1rem;
+}
 
 #menuButton {
     position: absolute;
@@ -100,7 +113,7 @@ main.dark a:visited {
 }
 
 nav {
-    background-color: chocolate;
+    background-color: var(--nav-color);
     font-weight: bold;
     position: relative;
 }
@@ -125,7 +138,10 @@ nav a:hover {
 
 nav .active {
     background-color: rgba(0, 0, 0, 0.2);
-   padding-top: 2rem;
+}
+
+nav li:first-child {
+    padding-top: 2rem;
 }
 
 nav .active a{
@@ -143,7 +159,7 @@ nav .active a{
 
 #spacer {
     display: flex;
-    background-color: rgb(210, 105, 30);
+    background-color: var(--nav-color);
     height: 2rem;
     width: 100%;
     margin-top: -2rem;
@@ -169,7 +185,7 @@ nav .active a{
 }
 
 .card h2 {
-    background-color:darkolivegreen;
+    background-color: var(--banner-color);
     color: tan;
     text-align: center;
     padding: .2em;
@@ -192,6 +208,69 @@ nav .active a{
     padding: .5rem;
 }
 
+
+input {
+    display: block;
+    border: 1px solid darkolivegreen;
+    border-radius: 6px;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+fieldset {
+    margin: 2rem 1rem;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#personalInfo > label {
+    color: #d80000;
+}
+
+
+form input:required {
+    border-right: 8px solid red;
+}
+
+
+input:required:valid {
+    border-right: solid 8px #76ac08;
+}
+
+#rangevalue {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+main.dark form input[type="range"] {
+    color: white;
+}
+
+input[type="submit"] {
+    margin-left: 1.5rem;
+    width: 80%;
+    max-width: 300px;
+    background-image: linear-gradient(rgb(110, 146, 47), var(--banner-color));
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+    transition: box-shadow 0.3s ease-in-out, background-image 0.7s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 7px 7px rgba(128, 128, 128, 0.5);
+    background-image: radial-gradient(rgb(110, 146, 47), var(--banner-color));
+}
+
+#thankYou {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-justify: center;
+    padding-top: 20vw;
+    height: 70vh;
+}
+
 footer {
     display: block;
     text-align: center;
@@ -199,7 +278,7 @@ footer {
 }
 
 p {
-    background-color: darkolivegreen;
+    background-color: var(--banner-color);
     color: white;
     padding: 05px;
 }
