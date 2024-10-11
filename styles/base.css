@@ -1,6 +1,7 @@
 :root {
     --banner-color: rgb(85, 107, 47);
     --nav-color: rgb(210, 105, 30);
+    --full-screen: span 2;
 }
 
 * {
@@ -63,7 +64,7 @@ header span {
 }
 
 h1 {
-    grid-column: span 2;
+    grid-column: var(--full-screen);
     text-align: center;
 }
 

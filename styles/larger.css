@@ -28,7 +28,7 @@
     }
 
     #hero {
-        grid-column: span 2;
+        grid-column: var(--full-screen);
         margin: 0;
         width: 100vw;
         height: auto;
@@ -55,7 +55,7 @@
 
 
     #location {
-        grid-column: span 2;
+        grid-column: var(--full-screen);
         width: 100vw;
     }
 
@@ -68,7 +68,7 @@
     }
 
     form {
-        grid-column: span 2;
+        grid-column: var(--full-screen);
         width: 100%;
         max-width: 80%;
         margin: auto;
@@ -83,6 +83,6 @@
     }
 
     #thankYou {
-        grid-column: span 2;
+        grid-column: var(--full-screen);
     }
 }
