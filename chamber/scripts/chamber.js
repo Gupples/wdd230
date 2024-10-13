@@ -32,11 +32,11 @@ const options = {
     year: "numeric"
 }
 
-const footer = document.querySelector('p');
-let footerText = footer.textContent;
+const footer = document.querySelector('#copyright');
+let footerText = footer.innerHTML;
 const currentDate = new Date().toLocaleDateString("en-US", options);
 let newFooter = footerText.replace('CurrentYear', currentDate)
-footer.textContent = newFooter;
+footer.innerHTML = newFooter;
 
 // Insert last modification information
 const modified = document.lastModified;
