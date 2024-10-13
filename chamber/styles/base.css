@@ -1,0 +1,193 @@
+:root {
+    --banner-color: #006400;
+    --nav-color: #0B4747;
+    --background-day: #9CED8B;
+    --background-night: #004000;
+    --text-day: black;
+    --text-night: white;
+    --full-screen: span 2;
+    --header-font: "Oswald", sans-serif;
+    --paragraph-font: "Source Sans Pro", sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+}
+
+h1 {
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+header {
+    background-color: var(--banner-color);
+    color: var(--text-night);
+    height: 125px;
+    width: auto;
+    justify-items: center;
+    display: flex;
+}
+
+#darkModeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#darkModeButton::before {
+    content: '🌙';
+}
+
+#darkModeButton.dark::before {
+    content: '☀️';
+}
+
+nav {
+    background-color: var(--nav-color);
+    font-weight: bold;
+    position: relative;
+}
+
+
+#menuButton {
+    position: absolute;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    top: 0.2rem;
+    right: 0.2rem;
+    cursor: pointer;
+}
+
+#menuButton::before {
+    content: "☰";
+    color: var(--text-night);
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+#menuButton.open::before {
+    content: "❌";
+    margin-right: 0.2rem;
+}
+
+#navLinks {
+    display: none;
+    list-style-type: none;
+}
+
+#navLinks.open {
+    display: block;
+    margin-top: -2rem;
+}
+
+#spacer {
+    display: none;
+}
+
+#spacer.open {
+    display: block;
+    background-color: var(--nav-color);
+    height: 2rem;
+    width: 100%;
+    margin-top: -2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    width: 100%;
+}
+
+nav li:first-child {
+    padding-top: 2rem;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--text-night);
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#hero {
+    position: relative;
+}
+
+#hero-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#callToAction {
+    height: 0;
+}
+
+#callToAction  button{
+    position: relative;
+    top: -325px;
+    left: 10vw;
+    padding: 15px 30px;
+    border-radius: 6px;
+    background-image: radial-gradient(var(--background-day), var(--background-night));
+    font-weight: bolder;
+    font-family: var(--paragraph-font);
+    font-size: larger;
+}
+
+main {
+    color: var(--text-day);
+    background-color: var(--background-day);
+}
+
+main.dark {
+    background-color: var(--background-night);
+    color: var(--text-night);
+}
+
+
+.card {
+    margin: 2rem 3rem;
+    padding: 1rem 5px;
+    border: 2px solid var(--text-day);
+    border-radius: 3px;
+}
+
+main.dark .card {
+    border: 2px solid var(--background-day);
+}
+
+.card:last-child {
+    margin-bottom: 0rem;
+}
+
+footer {
+    background-color: var(--banner-color);
+    color: var(--text-night);
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 1rem;
+}

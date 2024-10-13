@@ -22,33 +22,47 @@
 <body>
     <header>
         <h1>Lindon Utah Chamber of Commerce</h1>
-
+        <button id="darkModeButton"></button>
     </header>
     <nav>
-
+        <span id="spacer" class="open"></span>
+        <button id="menuButton"></button>
+        <ul id="navLinks">
+            <li class="active"><a href="https://gupples.github.io/wdd230/chamber/index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
     </nav>
     <main>
         <div id="hero">
-            
+            <img id="hero-img" src="images/hero-img.webp" alt="Lindon City Temple Construction" width="600" height="400">
         </div>
         <div id="callToAction">
-
+            <button>Join</button>
         </div>
-        <div id="currentEvents">
-
+        <div id="currentEvents" class="card">
+            <h2>Current Events</h2>
+            <p>This is the Current Events section placeholder</p>
         </div>
-        <div id="weather">
-
+        <div id="weather" class="card">
+            <h2>Weather</h2>
+            <p>This is the weather placeholder</p>
         </div>
-        <div id="spotlights">
-
+        <div id="spotlights" class="card">
+            <h2>Spotlights</h2>
+            <p>This is the spotlights placeholder</p>
         </div>
     </main>
     <footer>
-        <p>&copy;CurrentYear</p>
-        <p>Jared Davey</p>
-        <p> Chamber of Commerce project created for WDD 230; Web Frontend Development.</p>
-        <p id="lastModified"></p>
+        <span id="cityInformation"></span>
+        <span id="authorInformation">
+
+            <p>&copy;CurrentYear</p>
+            <p>Jared Davey</p>
+            <p> Chamber of Commerce project created for WDD 230-Web Frontend Development.</p>
+            <p id="lastModified"></p>
+        </span>
     </footer>
     <script src="scripts/chamber.js"></script>
 </body>
