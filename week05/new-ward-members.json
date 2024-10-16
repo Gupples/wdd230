@@ -1,0 +1,28 @@
+{
+    "familyName": "Johnson",
+    "moveInDate": "26 March 2023",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "members": [
+        {
+            "name": "Jack",
+            "gender": "male",
+            "birthDate": "14 February 1994"
+        },
+        {
+            "name": "Debbie",
+            "gender": "female",
+            "birthDate": "7 August 1995"
+        },
+        {
+            "name": "Samuel",
+            "gender": "male",
+            "birthDate": "22 July 2019"
+        },
+        {
+            "name": "",
+            "gender": "male",
+            "birthDate": "14 February 1994"
+        }
+    ]
+}
