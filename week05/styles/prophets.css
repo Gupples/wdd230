@@ -1,0 +1,32 @@
+* {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#cards section {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: rgb(137, 154, 171);
+
+}
+
+#cards img {
+    object-fit: cover;
+    width: 70%;
+    height: 65%;
+}
+
+h1, h2 {
+    color: darkblue;
+    font-family: "Oswald", sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+}
