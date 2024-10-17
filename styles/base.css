@@ -43,6 +43,11 @@ header span {
     width: 100%;
 }
 
+#hero-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 #hero-label{
     position: absolute;
     top: 30px;
