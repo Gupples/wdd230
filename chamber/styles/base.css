@@ -166,7 +166,7 @@ main.dark {
     display: block;
 }
 
-#sidebar span{
+#sidebar div{
     display: block;
     text-align: center;
     height: 9rem;
@@ -176,11 +176,11 @@ main.dark {
     margin: 1rem 1rem;
 }
 
-#sidebar span:nth-child(odd) {
+#sidebar div:nth-child(odd) {
     background-color: white;
 }
 
-#sidebar span:last-child {
+#sidebar div:last-child {
     margin-bottom: 0rem;
     height: 1rem;
     border: none;

@@ -45,7 +45,7 @@
         grid-column: 2 / 3;
     }
 
-    #sidebar span{
+    #sidebar div{
         display: block;
         width: 90%;
         border: 2px solid black;
