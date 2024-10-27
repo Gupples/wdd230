@@ -176,6 +176,68 @@ main.dark {
     margin: 1rem 1rem;
 }
 
+.join {
+    padding: 1.5rem;
+}
+
+fieldset {
+    border-color: var(--background-night);
+}
+fieldset:nth-child(even) {
+    margin: .75rem 0;
+}
+
+.join label, .join div{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding-top: .75rem;
+}
+
+.join input {
+    padding: .75rem;
+}
+
+
+.join input:required, main.dark .join input:required {
+    background-color: lightblue;
+}
+
+.join input:required:invalid, main.dark .join input:required:invalid {
+    background-color: lightpink;
+}
+
+.join input[type="submit"] {
+    padding: .75rem;
+    color: var(--text-night);
+    background-image: radial-gradient(var(--banner-color), var(--background-night));
+}
+
+main.dark .join input, main.dark .join textarea {
+    background-color: var(--background-day);
+}
+
+main.dark .join input[type="submit"] {
+    background-image: radial-gradient(var(--background-day), var(--banner-color));
+    color: var(--text-day);
+}
+
+#thankyou {
+    height: 65vh;
+    width: auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#benefits {
+    display: none;
+}
+
+#benefits div {
+    margin: 1rem;
+    text-align: center;
+}
+
 #sidebar div:nth-child(odd) {
     background-color: white;
 }

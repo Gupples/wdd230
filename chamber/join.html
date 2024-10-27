@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindon Chamber of Commerce</title>
+    <meta name="description" content="Home page for Lindon city's Chamber of Commerce">
+    <meta name="author" content="Jared Davey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Lindon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.loopnet.ca/i2/A5NFAeESzbR9mSKCd9OnI3MlXXKIcgEi42f8taxVeNk/110/500-S-500-W-Lindon-UT-Building-Photo-1-Large.jpg">
+    <meta property="og:url" content="https://gupples.github.io/wdd230/index.html">
+</head>
+<body>
+    <header>
+        <h1>Lindon Utah Chamber of Commerce</h1>
+        <button id="darkModeButton"></button>
+    </header>
+    <nav>
+        <span id="spacer" class="open"></span>
+        <button id="menuButton"></button>
+        <ul id="navLinks">
+            <li><a href="https://gupples.github.io/wdd230/chamber/index.html">Home</a></li>
+            <li><a href="https://gupples.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li class="active"><a href="https://gupples.github.io/wdd230/chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html" class="join">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Title/Position <input type="text" name="position" pattern="^[A-Za-z\s-]{7,}$" placeholder="Enter your title/position"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business/ Organization Info</legend>
+                <label>Name of Business/Organization* <input type="text" required name="org-name" id="org-name"></label>
+                <div>Membership Level</div>
+                <label><input type="radio" name="membership" value="NP Membership">NP Membership</label>
+                <label><input type="radio" name="membership" value="Bronze Membership">Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver Membership">Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold Membership">Gold Membership</label>
+                <label>Description <textarea name="org-description" id="org-description" rows="4" cols="40"></textarea></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                
+            </fieldset>
+            <input type="submit" value="Join the Chamber">
+        </form>
+        <div id="benefits">
+            <h3>MEMBERSHIP LEVELS</h3>
+            <p>All membership benefits are cumulative. (will turn into a table later)</p>
+            <div>
+                <h4>Non-Profit (NP)</h4>
+                <p>No-Cost, benefits</p>
+                <p>(placeholder info)</p>
+            </div>
+            <div>
+                <h4>Bronze</h4>
+                <p>Cost, benefits</p>
+                <p>(placeholder info)</p>
+            </div>
+            <div>
+                <h4>Silver</h4>
+                <p>Cost, benefits</p>
+                <p>(placeholder info)</p>
+            </div>
+            <div>
+                <h4>Gold</h4>
+                <p>Cost, benefits</p>
+                <p>(placeholder info)</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="cityInformation"></div>
+        <div id="authorInformation">
+            <p id="copyright">&copy;CurrentYear | Jared Davey</p>
+            <p> Chamber of Commerce project created for WDD 230-Web Frontend Development.</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
