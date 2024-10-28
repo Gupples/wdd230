@@ -264,6 +264,15 @@ main.dark .join input[type="submit"] {
     color: var(--text-night);
 }
 
+#displayMenu button:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: var(--text-day);
+}
+
+main.dark #displayMenu button:hover {
+    background-color: rgba(0, 255, 0, 0.95);
+}
+
 main.dark #displayMenu button {
     background-color: var(--background-day);
     color: var(--text-day);
