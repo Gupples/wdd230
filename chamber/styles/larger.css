@@ -78,6 +78,37 @@
         top: 80px;
     }
 
+    #displayMenu {
+        grid-column: span 2;
+    }
+
+    #displayMenu button {
+        margin:  2rem;
+    }
+
+    #displayField {
+        grid-column: span 2;
+        border: 2px solid red;
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .grid section {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
     #weather {
         grid-row: span 2;
     }

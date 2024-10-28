@@ -246,6 +246,78 @@ main.dark .join input[type="submit"] {
     text-align: center;
 }
 
+
+#displayMenu {
+    display: flex;
+    grid-column: span 2;
+    align-items: center;
+    height: 5rem;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#displayMenu button {
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+#displayField {
+    padding: .75rem;
+}
+
+main.dark #displayField a {
+    color: #c0e7f3;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid section {
+    padding: .7rem;
+    border: 2px solid black;
+    display: inline-block;
+    margin: .5rem 0;
+    text-align: center;
+    width: 75vw;
+    height: auto;
+}
+
+.grid section img {
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 100px;
+    margin: 0 auto;
+}
+
+.list section {
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.list section a {
+    color: #0000e4;
+}
+.list section:nth-child(odd) {
+    background-color: #77de62;
+}
+
+.list section:nth-child(odd) a{
+    color: #0000c1;
+}
+
+main.dark .list section:nth-child(odd) {
+    background-color: #005400;
+}
+
+.list section img {
+    display: none;
+}
+
+
 #sidebar div:nth-child(odd) {
     background-color: white;
 }
