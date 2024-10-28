@@ -10,6 +10,15 @@
             "other": "other 1"
         },
         {
+            "name": "name 2",
+            "address": "address 2",
+            "phone": "phone 2",
+            "url": "url 2",
+            "pic": "pic 2",
+            "membership": "membership 2",
+            "other": "other 2"
+        },
+        {
             "name": "name 3",
             "address": "address 3",
             "phone": "phone 3",
