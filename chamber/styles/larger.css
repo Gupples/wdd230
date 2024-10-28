@@ -88,13 +88,12 @@
 
     #displayField {
         grid-column: span 2;
-        border: 2px solid red;
         width: 100%;
     }
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 10px;
     }
 
@@ -107,6 +106,7 @@
     .list section {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        padding: 1rem;
     }
 
     #weather {

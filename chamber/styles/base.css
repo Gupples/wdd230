@@ -260,6 +260,13 @@ main.dark .join input[type="submit"] {
     border-radius: 8px;
     padding: 1rem 2rem;
     margin: auto;
+    background-color: var(--background-night);
+    color: var(--text-night);
+}
+
+main.dark #displayMenu button {
+    background-color: var(--background-day);
+    color: var(--text-day);
 }
 
 #displayField {
@@ -278,12 +285,16 @@ main.dark #displayField a {
 
 .grid section {
     padding: .7rem;
-    border: 2px solid black;
+    border: 2px solid var(--background-night);
     display: inline-block;
     margin: .5rem 0;
     text-align: center;
     width: 75vw;
     height: auto;
+}
+
+main.dark .grid section {
+    border: 1px solid var(--background-day);
 }
 
 .grid section img {
@@ -294,8 +305,12 @@ main.dark #displayField a {
 }
 
 .list section {
-    border: 1px solid blue;
+    border: 1px solid var(--background-night);
     padding: 10px;
+}
+
+main.dark .list section {
+    border: 1px solid var(--background-day);
 }
 
 .list section a {
