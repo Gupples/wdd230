@@ -40,8 +40,8 @@
         grid-column: span 2;
     }
 
-    #benefits {
-        margin-bottom: 5rem;
+    #benefits-container {
+        padding-top: 1rem;
     }
 
     #sidebar {

@@ -192,6 +192,7 @@ fieldset:nth-child(even) {
     width: 100%;
     max-width: 400px;
     padding-top: .75rem;
+    padding-bottom: .75rem;
 }
 
 .join input {
@@ -222,6 +223,39 @@ main.dark .join input[type="submit"] {
     color: var(--text-day);
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr td{
+    border: 1px solid var(--background-night);
+}
+
+main.dark table tr td {
+    border: 1px solid var(--background-day);
+}
+
+caption {
+    caption-side: bottom;
+    padding: 1rem;
+}
+
+th {
+    padding-right: .5rem;
+}
+
+thead > tr:first-child th:first-child {
+    font-size: x-large;
+    font-family: var(--header-font);
+}
+
+td {
+    text-align: center;
+    min-width: 4rem;
+    height: 2rem;
+}
+
 #thankyou {
     height: 65vh;
     width: auto;
@@ -229,21 +263,14 @@ main.dark .join input[type="submit"] {
     padding-top: 3rem;
 }
 
-#benefits-containter{
-    height: 100%;
-    /* margin-bottom: -.75rem; */
+#benefits-container{
+    padding-bottom: 1rem;
 }
 
 #benefits {
-    display: block;
     border: 2px solid black;
     padding: .75rem;
     margin: 1rem 1rem 0 1rem;
-}
-
-#benefits div {
-    margin: 1rem;
-    text-align: center;
 }
 
 
